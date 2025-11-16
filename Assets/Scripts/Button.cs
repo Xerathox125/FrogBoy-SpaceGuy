@@ -1,0 +1,72 @@
+using UnityEngine;
+
+public class Button : MonoBehaviour
+{
+    [SerializeField] Direccion direccion;
+    public GameObject platform;
+    public float distancia = 0, suavizado = 2;
+
+    private Animator btnSpriteAnimator;
+    private bool btnPressed;
+    private Vector3 inicio, destino;
+
+
+    void Start()
+    {
+        btnSpriteAnimator = GetComponentInChildren<Animator>();
+        inicio = platform.transform.position;
+
+        switch (direccion)
+        {
+            case Direccion.Horizontal:
+                destino = new Vector3(inicio.x + distancia, inicio.y, inicio.z);
+                break;
+            case Direccion.Vertical:
+                destino = new Vector3(inicio.x, inicio.y + distancia, inicio.z);
+                break;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        btnPressed = true;
+        btnSpriteAnimator.SetBool("btnPressed", true);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        btnPressed = false;
+        btnSpriteAnimator.SetBool("btnPressed", false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {        
+        if (btnPressed)
+        {
+            MovePlatform();
+        }
+        else if(!btnPressed)
+        {
+            ReturnPlatform();
+        }    
+    }
+
+
+private void MovePlatform()
+    {
+        platform.transform.position = Vector3.MoveTowards(platform.transform.position, destino, suavizado * Time.deltaTime);
+    }
+
+    private void ReturnPlatform()
+    {
+        platform.transform.position = Vector3.MoveTowards(platform.transform.position, inicio, suavizado * Time.deltaTime);
+    }
+
+
+    private enum Direccion
+    {
+        Horizontal,
+        Vertical
+    }
+}
