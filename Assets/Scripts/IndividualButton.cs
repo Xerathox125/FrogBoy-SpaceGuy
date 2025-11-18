@@ -15,15 +15,13 @@ public class IndividualButton : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //DoubleButtonsScript.ButtonsPressed++;
-        DoubleButtonsScript.ButtonsPressed+=1;
+        DoubleButtonsScript.ButtonsPressed++;
         btnSpriteAnimator.SetBool("btnPressed", true);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        //DoubleButtonsScript.ButtonsPressed--;
-        DoubleButtonsScript.ButtonsPressed-=1;
+        DoubleButtonsScript.ButtonsPressed--;
         btnSpriteAnimator.SetBool("btnPressed", false);
     }
 }
