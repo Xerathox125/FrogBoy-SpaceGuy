@@ -1,0 +1,81 @@
+:root {
+}
+
+.button {
+    height: 150px;
+    background-color: rgb(122, 41, 150);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    font-size: 50px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.PausaDefault {
+    flex-grow: 1;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    align-self: center;
+    bottom: 0;
+    left: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234, 113, 189);
+    border-left-color: rgb(33, 31, 48);
+    border-right-color: rgb(33, 31, 48);
+    border-top-color: rgb(33, 31, 48);
+    border-bottom-color: rgb(33, 31, 48);
+    border-bottom-width: 0;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 53px;
+    border-top-right-radius: 53px;
+}
+
+.PausaDown {
+    translate: 0 500px;
+}
+
+.text {
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    letter-spacing: 9px;
+    -unity-font-style: bold;
+}
+
+.NivelCompletadoDefault {
+    flex-grow: 1;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    align-self: center;
+    top: 20%;
+    background-color: rgb(234, 113, 189);
+    border-left-color: rgb(33, 31, 48);
+    border-right-color: rgb(33, 31, 48);
+    border-top-color: rgb(33, 31, 48);
+    border-bottom-color: rgb(33, 31, 48);
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 426px;
+    border-top-right-radius: 426px;
+    border-bottom-right-radius: 426px;
+    border-bottom-left-radius: 426px;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.NivelCompletadoRight {
+    translate: 1925px 0;
+}

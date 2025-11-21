@@ -1,0 +1,23 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles.uss?fileID=7433441132597879392&amp;guid=95182822ef113b0458d2996bc23b9636&amp;type=3#Styles" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; height: 10%; max-height: 8%; flex-direction: row; justify-content: center;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; max-width: 200px; -unity-background-image-tint-color: rgb(55, 55, 55); background-color: rgb(234, 113, 189); border-top-width: 0; border-right-width: 8px; border-bottom-width: 8px; border-left-width: 8px; border-left-color: rgb(33, 31, 48); border-right-color: rgb(33, 31, 48); border-top-color: rgb(33, 31, 48); border-bottom-color: rgb(33, 31, 48); border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; flex-direction: row; justify-content: center; align-self: auto; align-content: flex-start; -unity-text-align: upper-center; margin-bottom: 0;">
+            <ui:Label text="00:00" name="lblTimer" style="font-size: 45px; color: rgb(255, 255, 255); -unity-font-style: bold; flex-direction: column; margin-top: 2px; translate: 0 -8px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="MenuPausa" class="PausaDefault PausaDown" style="transition-duration: 0.8s; transition-timing-function: ease; transition-delay: 0.2s;">
+        <ui:Button text="PAUSA" name="btnPausa" style="width: 150px; height: 70px; font-size: 26px; -unity-font-style: bold; color: rgb(255, 255, 255); background-color: rgb(234, 113, 189); border-top-width: 8px; border-right-width: 8px; border-bottom-width: 0; border-left-width: 8px; border-left-color: rgb(33, 31, 48); border-right-color: rgb(33, 31, 48); border-top-color: rgb(33, 31, 48); border-bottom-color: rgb(33, 31, 48); border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 0; border-bottom-left-radius: 0; translate: 0 -72px;" />
+        <ui:VisualElement style="flex-grow: 1; width: 400px; height: 400px; margin-bottom: 31px; justify-content: space-around;">
+            <ui:Button text="CONTINUAR" name="btnContinuar" class="button" />
+            <ui:Button text="INICIO" name="btnInicio" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="NivelCompletado" class="NivelCompletadoDefault NivelCompletadoRight" style="transition-duration: 0.7s; transition-delay: 0.1s;">
+        <ui:VisualElement style="flex-grow: 1; max-height: 35%; background-color: rgb(122, 41, 150); justify-content: center;">
+            <ui:Label text="¡COMPLETADO!" class="text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; max-height: 25%; background-color: rgb(122, 41, 150); justify-content: center;">
+            <ui:Label text="RANGO: A" class="text" style="font-size: 101px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
