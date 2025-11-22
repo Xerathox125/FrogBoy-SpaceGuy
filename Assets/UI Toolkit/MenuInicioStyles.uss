@@ -39,3 +39,7 @@
 .ventanaNivelesRight {
     translate: 2032px 0;
 }
+
+.button:hover {
+    scale: 1.1 1.1;
+}

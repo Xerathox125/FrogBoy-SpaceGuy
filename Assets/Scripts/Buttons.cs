@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Button : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     [SerializeField] Direccion direccion;
     private Animator btnSpriteAnimator;
