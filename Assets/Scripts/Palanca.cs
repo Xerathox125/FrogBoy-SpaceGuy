@@ -3,12 +3,12 @@ using UnityEngine;
 public class Palanca : MonoBehaviour
 {
     [SerializeField] Direccion direccion;
-    public GameObject platform;
-    public float distancia = 0, suavizado = 2;    
     private Vector3 inicio, destino;
     private HingeJoint2D HingeJoint2D;
     private float anguloActivacion;
-
+    public GameObject platform;
+    public float distancia = 0, suavizado = 2;    
+    
 
     void Start()
     {
@@ -27,9 +27,6 @@ public class Palanca : MonoBehaviour
         }
     }
 
-
-
-    // Update is called once per frame
     void Update()
     {
         float anguloPalanca = HingeJoint2D.jointAngle;
@@ -54,12 +51,9 @@ public class Palanca : MonoBehaviour
     {
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, inicio, suavizado * Time.deltaTime);
     }
-
-
     private enum Direccion
     {
         Horizontal,
         Vertical
     }
-
 }

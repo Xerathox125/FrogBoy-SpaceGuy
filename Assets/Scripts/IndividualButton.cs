@@ -5,13 +5,12 @@ public class IndividualButton : MonoBehaviour
     private Animator btnSpriteAnimator;
     private DoubleButtons DoubleButtonsScript;
 
+
     private void Start()
     {
         btnSpriteAnimator = GetComponentInChildren<Animator>();
         DoubleButtonsScript = GetComponentInParent<DoubleButtons>();
-
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

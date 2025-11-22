@@ -3,12 +3,11 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     [SerializeField] Direccion direccion;
-    public GameObject platform;
-    public float distancia = 0, suavizado = 2;
-
     private Animator btnSpriteAnimator;
     private bool btnPressed;
     private Vector3 inicio, destino;
+    public GameObject platform;
+    public float distancia = 0, suavizado = 2;
 
 
     void Start()
@@ -39,7 +38,6 @@ public class Button : MonoBehaviour
         btnSpriteAnimator.SetBool("btnPressed", false);
     }
 
-    // Update is called once per frame
     void Update()
     {        
         if (btnPressed)
@@ -53,7 +51,7 @@ public class Button : MonoBehaviour
     }
 
 
-private void MovePlatform()
+    private void MovePlatform()
     {
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, destino, suavizado * Time.deltaTime);
     }
@@ -62,7 +60,6 @@ private void MovePlatform()
     {
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, inicio, suavizado * Time.deltaTime);
     }
-
 
     private enum Direccion
     {

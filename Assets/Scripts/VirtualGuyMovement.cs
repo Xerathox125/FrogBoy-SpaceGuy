@@ -7,10 +7,10 @@ public class VirtualGuyMovement : MonoBehaviour
     private Animator GuyAnimator;
     private PlayerInput GuyPlayerInput;
     private InputAction GuyMove, GuyJump;
-
-    public float velocidad, fuerzaSalto;
     private float groundedDistance = 0.52f;
     private bool isGrounded;
+    public float velocidad, fuerzaSalto;
+   
 
     void Awake()
     {
@@ -20,7 +20,6 @@ public class VirtualGuyMovement : MonoBehaviour
 
         GuyMove = GuyPlayerInput.actions["GuyMove"];
         GuyJump = GuyPlayerInput.actions["GuyJump"];
-
     }
 
     private void OnEnable()
@@ -63,7 +62,6 @@ public class VirtualGuyMovement : MonoBehaviour
             GuyAnimator.SetBool("IsRunning", false);
         }
 
-
         if (direccion.x > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -82,7 +80,6 @@ public class VirtualGuyMovement : MonoBehaviour
         if (isGrounded)
         {
             GuyRigidbody.AddForce(Vector2.up * fuerzaSalto);
-
         }
     }
 }

@@ -8,10 +8,10 @@ public class NinjaFrogMovement : MonoBehaviour
     private Animator FrogAnimator;
     private PlayerInput FrogPlayerInput;
     private InputAction FrogMove, FrogJump;
-
-    public float velocidad, fuerzaSalto;
     private float groundedDistance = 0.52f;
     private bool isGrounded;
+    public float velocidad, fuerzaSalto;
+    
 
     void Awake()
     {
@@ -21,7 +21,6 @@ public class NinjaFrogMovement : MonoBehaviour
 
         FrogMove = FrogPlayerInput.actions["FrogMove"];
         FrogJump = FrogPlayerInput.actions["FrogJump"];
-
     }
 
     private void OnEnable()
@@ -48,7 +47,6 @@ public class NinjaFrogMovement : MonoBehaviour
         }
 
         FrogMoving();
-
     }
 
     private void FrogMoving()
@@ -71,17 +69,13 @@ public class NinjaFrogMovement : MonoBehaviour
         }
 
         FrogRigidbody.linearVelocity = new Vector2(direccion.x * velocidad, FrogRigidbody.linearVelocityY);
-
     }
 
     private void FrogJumping(InputAction.CallbackContext context)
     {
-        if(isGrounded)
+        if (isGrounded)
         {
             FrogRigidbody.AddForce(Vector2.up * fuerzaSalto);
-
         }
     }
-
-
 }

@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class DoubleButtons : MonoBehaviour
 {
-    [SerializeField] Direccion direccion;
+    [SerializeField] Direccion direccion;    
+    private Vector3 inicio, destino;
     public GameObject platform;
+    private int buttonsPressed = 0;
     public float distancia = 0, suavizado = 2;
     public bool ambosNecesarios;
-
-    private int buttonsPressed = 0;
-    private Vector3 inicio, destino;
 
     public int ButtonsPressed { get => buttonsPressed; set => buttonsPressed = value; }
 
@@ -27,9 +26,6 @@ public class DoubleButtons : MonoBehaviour
         }
     }
 
-
-
-    // Update is called once per frame
     void Update()
     {
         if (ambosNecesarios)
@@ -56,7 +52,6 @@ public class DoubleButtons : MonoBehaviour
         }
     }
 
-
     private void MovePlatform()
     {
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, destino, suavizado * Time.deltaTime);
@@ -66,7 +61,6 @@ public class DoubleButtons : MonoBehaviour
     {
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, inicio, suavizado * Time.deltaTime);
     }
-
 
     private enum Direccion
     {

@@ -4,6 +4,7 @@ public class Flags : MonoBehaviour
 {
     private Animator flagAnimator;
 
+
     void Start()
     {
         flagAnimator = GetComponent<Animator>();

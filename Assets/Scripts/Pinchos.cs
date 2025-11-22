@@ -32,5 +32,4 @@ public class Pinchos : MonoBehaviour
         VirtualGuy,
         Ambos
     }
-
 }

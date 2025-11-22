@@ -21,12 +21,10 @@ public class Fruits : MonoBehaviour
         }
     }
 
-
     private IEnumerator CollectFruit()
     {
         fruitAnimator.SetTrigger("fruitCollected");
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
-
 }
