@@ -3385,7 +3385,7 @@ Transform:
   m_GameObject: {fileID: 1122215234}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.97, y: 3.15, z: 0}
+  m_LocalPosition: {x: -9.26, y: 2.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4502,7 +4502,7 @@ Transform:
   m_GameObject: {fileID: 1672800530}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.99, y: 3.15, z: 0}
+  m_LocalPosition: {x: -10.65, y: 2.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4907,7 +4907,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: 1888683f53734d9458a7672adcd60919, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: df1f87122584e1c4b9eeecf416693394, type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Position: 0
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920

@@ -18,6 +18,20 @@ public class MenuInicioScript : MonoBehaviour
         btnLevel3 = root.Q<Button>("btnLevel3");
         ventanaNiveles = root.Q<VisualElement>("ventanaNiveles");
 
+        if (btnJugar == null || btnRegresoMenu == null || btnLevel1 == null || btnLevel2 == null || btnLevel3 == null || ventanaNiveles == null)
+        {
+            Debug.Log("No se pudo acceder a los elementos de la UI");
+        }
+        else if (GameController.niveles[2] == 1)
+        {
+            btnLevel2.SetEnabled(true);
+            btnLevel3.SetEnabled(true);
+        }
+        else if (GameController.niveles[1] == 1)
+        {
+            btnLevel2.SetEnabled(true);
+        }
+
     }
 
     private void OnEnable()

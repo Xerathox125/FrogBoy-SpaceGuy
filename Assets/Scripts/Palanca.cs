@@ -31,11 +31,11 @@ public class Palanca : MonoBehaviour
     {
         float anguloPalanca = HingeJoint2D.jointAngle;
 
-        if (anguloPalanca >= anguloActivacion)
+        if (anguloPalanca >= anguloActivacion && GameController.gameRunning == true)
         {
             MovePlatform();
         }
-        else if (anguloPalanca < anguloActivacion)
+        else if (anguloPalanca < anguloActivacion && GameController.gameRunning == true)
         {
             ReturnPlatform();
         }

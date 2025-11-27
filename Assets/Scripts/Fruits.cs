@@ -25,6 +25,8 @@ public class Fruits : MonoBehaviour
     {
         fruitAnimator.SetTrigger("fruitCollected");
         yield return new WaitForSeconds(0.5f);
+
+        GameController.collectedFruits++;
         Destroy(gameObject);
     }
 }

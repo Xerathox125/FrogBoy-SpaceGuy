@@ -15,6 +15,7 @@ public class Flags : MonoBehaviour
         if (collision.gameObject.CompareTag("NinjaFrog") || collision.gameObject.CompareTag("VirtualGuy"))
         {
             flagAnimator.SetBool("OnFlag", true);
+            GameController.playersOnFlag++;
         }
     }
 
@@ -24,6 +25,7 @@ public class Flags : MonoBehaviour
         if (collision.gameObject.CompareTag("NinjaFrog") || collision.gameObject.CompareTag("VirtualGuy"))
         {
             flagAnimator.SetBool("OnFlag", false);
+            GameController.playersOnFlag--;
         }
     }
 }

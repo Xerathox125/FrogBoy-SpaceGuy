@@ -40,11 +40,11 @@ public class Buttons : MonoBehaviour
 
     void Update()
     {        
-        if (btnPressed)
+        if (btnPressed && GameController.gameRunning == true)
         {
             MovePlatform();
         }
-        else if(!btnPressed)
+        else if(!btnPressed && GameController.gameRunning == true)
         {
             ReturnPlatform();
         }    

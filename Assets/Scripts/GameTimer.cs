@@ -17,7 +17,10 @@ public class GameTimer : MonoBehaviour
 
     void Update()
     {
-        Timer();
+        if(GameController.gameRunning == true)
+        {
+            Timer();
+        }
     }
 
     private void Timer()

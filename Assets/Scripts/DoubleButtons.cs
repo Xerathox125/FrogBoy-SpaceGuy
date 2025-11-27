@@ -28,7 +28,7 @@ public class DoubleButtons : MonoBehaviour
 
     void Update()
     {
-        if (ambosNecesarios)
+        if (ambosNecesarios && GameController.gameRunning == true)
         {
             if(buttonsPressed == 2)
             {
@@ -39,7 +39,7 @@ public class DoubleButtons : MonoBehaviour
                 ReturnPlatform();
             }
         }
-        else if (!ambosNecesarios)
+        else if (!ambosNecesarios && GameController.gameRunning == true)
         {
             if (buttonsPressed != 0)
             {
