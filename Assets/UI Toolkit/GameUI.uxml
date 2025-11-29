@@ -17,7 +17,7 @@
             <ui:Label text="¡COMPLETADO!" class="text" />
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: 1; max-height: 25%; background-color: rgb(122, 41, 150); justify-content: center;">
-            <ui:Label text="RANGO: A" class="text" style="font-size: 101px;" />
+            <ui:Label text="RANGO: A" name="lblRango" class="text" style="font-size: 101px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

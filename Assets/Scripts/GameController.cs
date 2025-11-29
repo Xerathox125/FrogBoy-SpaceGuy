@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
 
         puntajes = new int[,]
         {
-            {30,40,6},
+            {2,3,2},
             {40,50,8},
             {60,75,12},
         };
@@ -72,15 +72,18 @@ public class GameController : MonoBehaviour
 
         if (tiempo < puntajes[indiceNivel - 1, 0] && collectedFruits == puntajes[indiceNivel - 1, 2])
         {
-            //Rango A
+            Debug.Log("Está entrando a rango A");
+            PuntajeFinal.rango = "Rango: A";            
         }
         else if (tiempo < puntajes[indiceNivel - 1, 1] || collectedFruits == puntajes[indiceNivel - 1, 2])
         {
-            //Rango B
+            Debug.Log("Está entrando a rango B");
+            PuntajeFinal.rango = "Rango: B";            
         }
         else
         {
-            //Rango C
+            Debug.Log("Está entrando a rango C");
+            PuntajeFinal.rango = "Rango: C";
         }
 
         StartCoroutine(CargarSiguienteNivel());

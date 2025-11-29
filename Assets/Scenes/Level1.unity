@@ -4885,6 +4885,7 @@ GameObject:
   - component: {fileID: 1830978759}
   - component: {fileID: 1830978761}
   - component: {fileID: 1830978762}
+  - component: {fileID: 1830978763}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -4954,6 +4955,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34131b276e1cc0e41924332307961295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPausa
+--- !u!114 &1830978763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830978758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108c9e86b0af16e48b497245d0153b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuntajeFinal
 --- !u!1 &1838278514
 GameObject:
   m_ObjectHideFlags: 0
