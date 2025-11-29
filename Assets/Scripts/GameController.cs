@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
 
         puntajes = new int[,]
         {
-            {2,3,2},
+            {30,40,6},
             {40,50,8},
             {60,75,12},
         };
