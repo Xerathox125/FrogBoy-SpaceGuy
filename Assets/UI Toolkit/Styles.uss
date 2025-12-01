@@ -77,5 +77,5 @@
 }
 
 .NivelCompletadoRight {
-    translate: 1925px 0;
+    translate: 3000px 0;
 }

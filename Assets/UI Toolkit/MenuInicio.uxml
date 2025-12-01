@@ -6,7 +6,7 @@
             <ui:Button text="JUGAR" name="btnJugar" class="button" style="width: 700px; height: 200px; border-top-left-radius: 45px; border-top-right-radius: 45px; border-bottom-right-radius: 45px; border-bottom-left-radius: 45px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgb(234, 113, 189); font-size: 100px; -unity-font-style: bold; color: rgb(122, 41, 150); letter-spacing: 29px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="ventanaNiveles" class="ventanaNivelesDefault ventanaNivelesRight" style="transition-duration: 0.8s; transition-delay: 0.3s;">
+    <ui:VisualElement name="ventanaNiveles" class="ventanaNivelesDefault ventanaNivelesRight">
         <ui:VisualElement name="VisualElement" style="flex-grow: 1; max-height: 30%; flex-direction: row; justify-content: space-between; align-items: center; background-color: rgb(122, 41, 150); border-bottom-width: 20px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);">
             <ui:Label text="Niveles" name="Label" class="text" style="margin-left: 60px;" />
             <ui:Button text="X" name="btnRegresoMenu" class="button" style="margin-right: 60px; width: 150px; height: 150px; background-color: rgb(248, 156, 192); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 43px; border-top-right-radius: 43px; border-bottom-right-radius: 43px; border-bottom-left-radius: 43px; font-size: 150px; color: rgb(122, 41, 150); -unity-font-style: bold;" />
