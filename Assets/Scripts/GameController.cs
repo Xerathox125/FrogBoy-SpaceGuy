@@ -21,9 +21,9 @@ public class GameController : MonoBehaviour
 
         puntajes = new int[,]
         {
-            {30,40,6},
-            {40,50,8},
-            {60,75,12},
+            {40,60,14},
+            {40,60,10},
+            {60,75,13},
         };
 
         indiceNivel = SceneManager.GetActiveScene().buildIndex;
@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if(playersOnFlag == 2)
+        if (playersOnFlag == 2)
         {
             EndLevel();
         }
