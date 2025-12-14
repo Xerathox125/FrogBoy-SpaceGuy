@@ -72,17 +72,14 @@ public class GameController : MonoBehaviour
 
         if (tiempo < puntajes[indiceNivel - 1, 0] && collectedFruits == puntajes[indiceNivel - 1, 2])
         {
-            Debug.Log("Está entrando a rango A");
             PuntajeFinal.rango = "Rango: A";            
         }
         else if (tiempo < puntajes[indiceNivel - 1, 1] || collectedFruits == puntajes[indiceNivel - 1, 2])
         {
-            Debug.Log("Está entrando a rango B");
             PuntajeFinal.rango = "Rango: B";            
         }
         else
         {
-            Debug.Log("Está entrando a rango C");
             PuntajeFinal.rango = "Rango: C";
         }
 
